@@ -138,7 +138,7 @@ def main():
     print("\nStarting real-time prediction. Press 'q' to quit.")
 
     # Initialize MediaPipe Hands model for real-time processing
-    with mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.5, max_num_hands=1) as hands:
+    with mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.5, max_num_hands=2) as hands:
         prev_frame_time = 0
         new_frame_time = 0
         while cap.isOpened():
